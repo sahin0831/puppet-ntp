@@ -6,10 +6,10 @@ class ntp::service(
   Boolean $service_hasrestart = $ntp::service_hasrestart,
 ){
   service {'ntp':
-    ensure     => $service_ensure,
-    enable     => $service_enable,
-    name       => $service_name,
-    status     => $service_hasstatus,
-    hasrestart => $service_hasrestart,
+    ensure        => $service_ensure,
+    enable        => $service_enable,
+    name          => $service_name,
+    hasstatus     => $service_hasstatus,
+    hasrestart    => $service_hasrestart,
   }
 }

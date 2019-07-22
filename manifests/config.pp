@@ -8,7 +8,7 @@ class ntp::config(
     owner   => 0,
     group   => 0,
     mode    => $config_file_mode,
-    content => templete("$module_name/ntp.conf.erb")
+    content => template("$module_name/ntp.conf.erb")
   }
 
 
